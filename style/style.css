@@ -144,7 +144,7 @@ ul#menu li a:hover, ul#menu li.selected a
 /*sidebar*/
 .sidebar
 { float: right;
-  width: 190px;
+  width: 20%;
   padding: 0 25px 30px 25px;
  box-shadow: 2px 5px 5px 5px #d3e2e2;
 }
@@ -504,7 +504,8 @@ img{
     
 }
 .references{
-    margin-bottom: 150px; 
+    margin-bottom: 150px;
+    margin-right: 40px;
 }
 .Card {
   margin-top: 20px;
