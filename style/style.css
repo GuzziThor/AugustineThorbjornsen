@@ -65,7 +65,7 @@ ul li
   height: 180px;}
 
 #logo
-{ width: 84.65%;
+{ width: 94.65%;
   position: relative;
   height: 180px;
   background: #03727e;}
@@ -98,8 +98,8 @@ ul li
 
 /*Navigation bar*/
 #menubar
-{ width: 84.65%;
-  height: 72px;
+{ width: 94.65%;
+  height: 140px;
   padding: 0;
   background: #01474E;} 
 
@@ -134,7 +134,7 @@ ul#menu li a:hover, ul#menu li.selected a
 
 /*Body content*/
 #site_content
-{ width: 80%;
+{ width: 90%;
   height: 100%;
   overflow:hidden;
   margin: 0 auto 0 auto;
@@ -534,7 +534,7 @@ img{
     margin-left: 10px;
 }
 #footer
-{ width: 84.65%;
+{ width: 94.65%;
   font: normal 100% 'Nunito', sans-serif;
   height: 33px;
   padding: 24px 0 5px 0;
