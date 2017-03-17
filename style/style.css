@@ -161,7 +161,7 @@ ul#menu li a:hover, ul#menu li.selected a
 
 /*color page and the palette*/
 .palette{
-     width: 60%;
+     width: 50%;
     margin-top:30px;
   ;
     border: 10px solid;
@@ -284,8 +284,8 @@ p.color6{
   
 .table1
 { margin: 10px 0px 30px;
-    margin-left:25%;
-    width: 70%;
+    margin-left:15%;
+    width: 60%;
     height: 250px;
    box-shadow: 2px 5px 5px 5px #d3e2e2;}
 
@@ -478,8 +478,8 @@ img{
 .Card {
   margin-top: 20px;
   margin-bottom: 50px;
-margin-left:25%;
-  width: 70%;
+margin-left:15%;
+  width: 60%;
   height: 300px;
   box-shadow: 2px 5px 5px 5px #d3e2e2;
     
