@@ -1,5 +1,5 @@
-html
-{width: 100%;
+html{
+    
 }
 
 *
@@ -14,7 +14,7 @@ body
 
 /*paragraph and heading tags*/
 p
-{ padding: 0 0 10px 0;
+{ padding: 0 30px 10px 0;
   line-height: 1.7em;}
 
 h1, h2, h3, h4, h5 
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5
   padding: 15px 0 5px 0;}
 
 h2
-{ font: normal 200% 'Nunito', sans-serif;
+{ font: normal 240% 'Nunito', sans-serif;
   color: #01474e;}
 
 h4, h5
@@ -117,7 +117,7 @@ ul#menu li a
   display:block; 
   float: left; 
   height: 34px;
-  padding: 30px 40px 6px 40px;
+  padding: 30px 10px 6px 3px;
   text-align: center;
   color: #FFF;
   text-transform: uppercase;
@@ -129,23 +129,23 @@ ul#menu li a:hover, ul#menu li.selected a
   background: #005965;}
 
 .refer{
-    width:110px;
+    width:10%;
 }
 
 /*Body content*/
 #site_content
-{ width: 95.4%;
-  height: 100%;
+{ width: 100%;
   overflow:hidden;
-  margin: 0 auto 0 auto;
-  padding: 20px 24px 20px 37px;
+  padding-bottom: 5%;
+  padding-top:3%;
   background: #FFF;} 
 
 /*sidebar*/
 .sidebar
 { float: right;
-  width: 20%;
-  padding: 0 25px 30px 25px;
+  width: 15%;
+  margin: 0 20px 0;
+  padding: 10px 15px 20px 20px;
  box-shadow: 2px 5px 5px 5px #d3e2e2;
 }
 
@@ -171,7 +171,8 @@ ul#menu li a:hover, ul#menu li.selected a
 #content
 { text-align: left;
   width: 70%;
-  padding: 0;}
+  padding-left: 3%;
+  padding-right: 3%;}
 
 #content ul
 { margin: 2px 0 22px 0px;}
@@ -316,9 +317,10 @@ p.color6{
   margin: 0 0 20px 0;}
   
 .table1
-{ margin: 10px 0 30px 0;
-    width: 40%;
-    height: 40%;
+{ margin: 10px 0px 30px;
+    margin-left:25%;
+    width: 60%;
+    height: 250px;
    box-shadow: 2px 5px 5px 5px #d3e2e2;}
 
 .table1 tr th, table tr td
@@ -498,8 +500,7 @@ blockquote + b:first-letter {
 img{
     box-shadow: 2px 5px 5px 5px #d3e2e2;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
     margin-bottom: 50px;
     
 }
@@ -510,6 +511,7 @@ img{
 .Card {
   margin-top: 20px;
   margin-bottom: 50px;
+margin-left:25%;
   width: 50%;
   height: 300px;
   box-shadow: 2px 5px 5px 5px #d3e2e2;
