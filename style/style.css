@@ -1,6 +1,5 @@
 html
 { height: 100%;
-  width: 100%;
 }
 
 *
@@ -66,7 +65,7 @@ ul li
   height: 180px;}
 
 #logo
-{ width: 100%;
+{ width: 84.65%;
   position: relative;
   height: 180px;
   background: #03727e;}
@@ -99,7 +98,7 @@ ul li
 
 /*Navigation bar*/
 #menubar
-{ width: 100%;
+{ width: 84.65%;
   height: 72px;
   padding: 0;
   background: #01474E;} 
@@ -135,8 +134,9 @@ ul#menu li a:hover, ul#menu li.selected a
 
 /*Body content*/
 #site_content
-{ width: 96%;
-  overflow: hidden;
+{ width: 80%;
+  height: 100%;
+  overflow:hidden;
   margin: 0 auto 0 auto;
   padding: 20px 24px 20px 37px;
   background: #FFF;} 
@@ -150,7 +150,7 @@ ul#menu li a:hover, ul#menu li.selected a
 }
 
 .sidebar ul
-{ width: 40%; 
+{ width: 100%; 
   padding: 4px 0 0 0; 
   margin: 4px 0 30px 0;}
 
@@ -159,9 +159,9 @@ ul#menu li a:hover, ul#menu li.selected a
   padding: 0 0 7px 0; }
 
 .sidebar li a, .sidebar li a:hover
-{ padding: 0 0 0 40px;
+{ padding: 0 0 0 5px;
   display: block;
-  background: transparent url(link.png) no-repeat left center;} 
+ } 
 
 .sidebar li a.selected
 { color: #444;
@@ -170,15 +170,15 @@ ul#menu li a:hover, ul#menu li.selected a
 
 #content
 { text-align: left;
-  width: 50%;
+  width: 70%;
   padding: 0;}
 
 #content ul
 { margin: 2px 0 22px 0px;}
 
-#content ul li
+#content ul li, #site_content ul li 
 { list-style-type: none;
-  background: url(bullet.png) no-repeat;
+  background: transparent url(bullet.png) no-repeat;
   margin: 0 0 6px 0; 
   padding: 0 0 4px 25px;
   line-height: 1.5em;
@@ -189,11 +189,12 @@ ul#menu li a:hover, ul#menu li.selected a
 /*color page and the palette*/
 .palette{
     margin-top:30px;
-    margin-left:180px;
-    border: .5px;
-    border: solid;
+    margin-left:auto;
+    margin-right: auto;
+    border: 10px solid;
+    border-color: silver;
+    box-shadow: 1px 1px 4px 4px #d3e2e2;
     width: 520px;
-    box-shadow: 5px 5px 5px #d3e2e2;
         
 }
 p.color1{
@@ -251,6 +252,17 @@ p.color5{
     font:normal 120% 'Nunito', sans-serif;
     
 }
+p.color6{
+    background-color:#005965;
+    padding:10px;
+    margin-left: auto;
+    margin-right:auto;
+    color:white;
+    width: 500px;
+    height: 50px;
+    font:normal 120% 'Nunito', sans-serif;
+    
+}
  
 /*Components page form and tables*/
 .form_settings
@@ -282,8 +294,8 @@ p.color5{
 
 .form_settings textarea, .form_settings select
 { font: 100% arial; 
-  width: 50%x;
-    height:100px;
+  width: 50%;
+  height:100px;
 }
 
 .form_settings select
@@ -305,7 +317,9 @@ p.color5{
   
 .table1
 { margin: 10px 0 30px 0;
-box-shadow: 2px 5px 5px 5px #d3e2e2;}
+    width: 40%;
+    height: 40%;
+   box-shadow: 2px 5px 5px 5px #d3e2e2;}
 
 .table1 tr th, table tr td
 { background: #1c5358;
@@ -404,13 +418,13 @@ box-shadow: 2px 5px 5px 5px #d3e2e2;}
 
 /*More typography blockquote*/
 .container {
-    width: 590px;
+    width: 60%;
     position: relative;
     padding-top:40px;
     
 }
 blockquote {
-    width: 565px;
+    width: 100% ;
     font: 2.65em 'Oleo Script', cursive;
     letter-spacing: .075em;
     float: left;
@@ -482,29 +496,29 @@ blockquote + b:first-letter {
 
 /*Gif img in components*/
 img{
-    width: 400px;
     box-shadow: 2px 5px 5px 5px #d3e2e2;
     height: auto;
-    margin-left: 200px;
-    margin-bottom: 30px;
-    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     
 }
 .references{
     margin-bottom: 150px; 
 }
 .Card {
-    margin-top: 20px;
-  width: 320px;
-  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 300px;
   box-shadow: 2px 5px 5px 5px #d3e2e2;
     
 }
 .cardtitle {
   color: #fff;
-  background: url('https://getmdl.io/assets/demos/dog.png') no-repeat bottom right 15% #33949D;
-  width: 320px;
-  height:130px;     
+  background: url('https://getmdl.io/assets/demos/dog.png') no-repeat bottom right 30% #33949D;
+  width: 100%;
+  height: 200px;
 }
 .cardtitle-text{
     margin-left:10px;
@@ -520,7 +534,7 @@ img{
     margin-left: 10px;
 }
 #footer
-{ width: 100%;
+{ width: 84.65%;
   font: normal 100% 'Nunito', sans-serif;
   height: 33px;
   padding: 24px 0 5px 0;
