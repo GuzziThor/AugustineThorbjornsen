@@ -142,7 +142,7 @@ ul#menu li a:hover, ul#menu li.selected a
 
 #content
 { text-align: left;
-  width: 70%;
+  width: 90%;
   padding-left: 3%;
   padding-right: 3%;}
 
@@ -266,7 +266,7 @@ p.color6{
 }
 
 .form_settings select
-{ width: 310px;}
+{ width: 90%;}
 
 .form_settings .checkbox
 { margin: 4px 0; 
@@ -440,7 +440,7 @@ blockquote strong:first-child {
 }
 
 blockquote strong:last-child {
-    font: 2em "Museo 700";
+    font: 1.5em "Museo 700";
     text-transform: uppercase;
     letter-spacing: 0;
 }
@@ -451,7 +451,7 @@ blockquote em {
 blockquote + b {
     float: right;
     margin-top: 10px;
-    font: 1.6em CallunaRegular;
+    font: 1.6em;
     letter-spacing: 2.4px;
 }
 
@@ -464,7 +464,7 @@ blockquote + b:first-letter {
 
 /*Gif img in components*/
 img{
-    width: 40%;
+    width: 50%;
     box-shadow: 2px 5px 5px 5px #d3e2e2;
     margin-left: 25%;
     margin-bottom: 50px;
