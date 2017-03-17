@@ -6,13 +6,6 @@ html
 { margin: 0;
   padding: 0;}
 
-/* Smartphones (portrait and landscape) ----------- */
-@media screen and(min-width:1980px){
-    h2{
-        width:230px;
-    }
-}
-
 /*style for the body*/
 body
 { font: normal .80em 'Nunito', sans-serif;
