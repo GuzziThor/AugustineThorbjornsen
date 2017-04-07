@@ -1,6 +1,4 @@
-html{
-    
-}
+html{}
 
 *
 { margin: 0;
@@ -16,18 +14,17 @@ body
 p
 { padding: 0 30px 10px 0;
   line-height: 1.7em;}
-
-h1, h2, h3, h4, h5 
-{ font: normal 175% 'Nunito', sans-serif;
+h1
+{ font: normal 275% 'Nunito', sans-serif;
   color: #01282c;
-  margin: 0 0 0 0;
-  padding: 15px 0 5px 0;}
+  margin-bottom: 20px;
+}
 
 h2
 { font: normal 240% 'Nunito', sans-serif;
   color: #01474e;}
 
-h4, h5
+h4
 { margin: 0;
   padding: 0 0 5px 0;
   font: normal 130% 'Nunito', sans-serif;
@@ -51,11 +48,11 @@ ul
 
 ul li
 { list-style-type: circle;
-  margin: 0 0 6px 0; 
+  margin: 0 0 6px 0;
   padding: 0 0 4px 5px;}
 
 #main, #logo, #menubar, #site_content, #footer
-{ margin-left: auto; 
+{ margin-left: auto;
   margin-right: auto;
     float: center;
 }
@@ -70,8 +67,8 @@ ul li
   height: 180px;
   background: #03727e;}
 
-#logo #logo_text 
-{ position: absolute; 
+#logo #logo_text
+{ position: absolute;
   top: 20px;
   left: 0;
   margin-left: 25px;
@@ -84,12 +81,11 @@ ul li
   margin: 0;
   padding: 0px}
 
-#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover
 { padding: 22px 0 0 0;
   color: #FFF;
   letter-spacing: 0.1em;
   text-decoration: none;}
-
 
 #logo_text h2
 { font-size: 100%;
@@ -101,11 +97,11 @@ ul li
 { width: 100%;
   height: 400px;
   padding: 0;
-  background: #01474E;} 
+  background: #01474E;}
 
 ul#menu, ul#menu li
 { float: center;
-  margin: 0; 
+  margin: 0;
   padding: 0;}
 
 ul#menu li
@@ -114,15 +110,15 @@ ul#menu li
 ul#menu li a
 { letter-spacing: 0.1em;
   font: normal 100% 'Nunito', sans-serif;
-  display:block; 
-  float: left; 
+  display:block;
+  float: left;
   height: 34px;
   padding: 30px 10px 6px 3px;
   text-align: center;
   color: #FFF;
   text-transform: uppercase;
   text-decoration: none;
-  background: none;} 
+  background: none;}
 
 ul#menu li a:hover, ul#menu li.selected a
 { color: #FFF;
@@ -131,14 +127,13 @@ ul#menu li a:hover, ul#menu li.selected a
 .refer{
     width:150px;
 }
-
 /*Body content*/
 #site_content
 { width: 100%;
   overflow:hidden;
   padding-bottom: 5%;
   padding-top:3%;
-  background: #FFF;} 
+  background: #FFF;}
 
 #content
 { text-align: left;
@@ -149,27 +144,20 @@ ul#menu li a:hover, ul#menu li.selected a
 #content ul
 { margin: 2px 0 22px 0px;}
 
-#content ul li, #site_content ul li 
+#content ul li, #site_content ul li
 { list-style-type: none;
-  background: transparent url(bullet.png) no-repeat;
-  margin: 0 0 6px 0; 
+  background: transparent url(img/bullet.png) no-repeat;
+  margin: 0 0 6px 0;
   padding: 0 0 4px 25px;
   line-height: 1.5em;
 }
-
-
-
 /*color page and the palette*/
 .palette{
-     width: 50%;
+    width: 50%;
     margin-top:30px;
-  ;
-    border: 10px solid;
+    border: 10px, solid;
     border-color: silver;
-    box-shadow: 1px 1px 4px 4px #d3e2e2;
-   
-        
-}
+    box-shadow: 1px 1px 4px 4px #d3e2e2;}
 p.color1{
     background-color:#01282c;
     padding:10px;
@@ -178,7 +166,6 @@ p.color1{
     color:white;
     height: 50px;
     font:normal 120% 'Nunito', sans-serif;
-    
 }
 p.color2{
     background-color:#01474e;
@@ -188,7 +175,6 @@ p.color2{
     color:white;
     height: 50px;
     font:normal 120% 'Nunito', sans-serif;
-    
 }
 p.color3{
     background-color:#03727e;
@@ -198,7 +184,6 @@ p.color3{
     color:white;
     height: 50px;
     font:normal 120% 'Nunito', sans-serif;
-    
 }
 p.color4{
     background-color:#33949d;
@@ -208,7 +193,6 @@ p.color4{
     color:white;
     height: 50px;
     font:normal 120% 'Nunito', sans-serif;
-    
 }
 p.color5{
     background-color:#d3e2e2;
@@ -218,7 +202,6 @@ p.color5{
     color:black;
     height: 50px;
     font:normal 120% 'Nunito', sans-serif;
-    
 }
 p.color6{
     background-color:#005965;
@@ -228,52 +211,52 @@ p.color6{
     color:white;
     height: 50px;
     font:normal 120% 'Nunito', sans-serif;
-    
 }
- 
+
 /*Components page form and tables*/
 .form_settings
 { margin: 5px 0 0 0;
 }
 
 .form_settings p
-{ padding: 10 0 5px 0;}
-  
-.form_settings input, .form_settings textarea
-{ padding: 5px; 
-  width: 299px; 
-  font: 100% arial; 
-  border: 1px solid #000; 
-  background: #D3E2E2; 
-  color: #47433F;}
-  
-.form_settings .submit
-{ font: 100% arial; 
-  border: 1px solid; 
-  width: 99px; 
-  height: 33px;
-  padding: 2px 0 3px 0;
-  cursor: pointer; 
-  background: #01474e; 
-  color: #FFF;
-
+{ padding: 10 0 5px 0;
 }
 
-.form_settings textarea, .form_settings select
-{ font: 100% arial; 
+.form_settings input, .form_settings textarea
+{ padding: 5px;
+  width: 299px;
+  font: 100% arial;
+  border: 1px solid #000;
+  background: #D3E2E2;
+  color: #47433F;
+}
+
+.form_settings .submit
+{ font: 100% arial;
+  border: 1px solid;
+  width: 99px;
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer;
+  background: #01474e;
+  color: #FFF;
+}
+
+.form_settings textarea
+{ font: 100% arial;
   width: 90%;
   height:100px;
 }
-
 .form_settings select
 { width: 90%;}
 
 .form_settings .checkbox
-{ margin: 4px 0; 
-  padding: 0; 
+{ margin: 4px 0;
+  padding: 0;
   width: 14px;
   border: 0;
-  background: none;}
+  background: none;
+}
 
 .separator
 { width: 100%;
@@ -281,7 +264,7 @@ p.color6{
   border-top: 1px solid #D9D5CF;
   border-bottom: 1px solid #FFF;
   margin: 0 0 20px 0;}
-  
+
 .table1
 { margin: 10px 0px 30px;
     margin-left:15%;
@@ -294,7 +277,7 @@ p.color6{
   color: #FFF;
   padding: 7px 4px;
   text-align: left;}
-  
+
 .table1 tr td
 { background: #D3E2E2;
   color: #47433F;
@@ -320,7 +303,7 @@ p.color6{
 }
 .letter:before{
   color: #fff;
-  text-shadow: 
+  text-shadow:
     -1px 0px 1px rgba(255,255,255,.8),
     1px 0px 1px rgba(0,0,0,.8);
   z-index: 3;
@@ -357,31 +340,31 @@ p.color6{
 
 /*More typogaphy*/
 .typo1{
-    color: #03727e; 
-    font-family: 'Lobster', cursive; 
-    font-size: 150%; 
-    font-weight: normal; 
-    line-height: 48px; 
-    margin: 0 0 18px; 
+    color: #03727e;
+    font-family: 'Lobster', cursive;
+    font-size: 150%;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
     text-shadow: 1px 0 0 #fff;
 }
 .typo2{
-    color: #01282C; 
-    font-family: 'Diplomata SC', cursive; 
-    font-size: 100%; 
-    font-weight: normal; 
-    line-height: 32px; 
-    margin: 0 0 18px; 
+    color: #01282C;
+    font-family: 'Diplomata SC', cursive;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 0 0 18px;
     text-shadow: 1px 0 0 #fff;
 }
 .typo3{
-    color: #01282C; 
-    font-family: 'Julius Sans One', sans-serif; 
-    font-size: 150%; 
-    font-weight: bold; 
-    line-height: 32px; 
-    margin: 0 0 24px; 
-    text-shadow: 1px 1px 1px #082b34; 
+    color: #01282C;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 0 0 24px;
+    text-shadow: 1px 1px 1px #082b34;
 }
 
 /*More typography blockquote*/
@@ -389,7 +372,7 @@ p.color6{
     width: 90%;
     position: relative;
     padding-top:40px;
-    
+
 }
 blockquote {
     width: 100% ;
@@ -468,8 +451,8 @@ img{
     box-shadow: 2px 5px 5px 5px #d3e2e2;
     margin-left: 25%;
     margin-bottom: 50px;
-    
-    
+
+
 }
 .references{
     margin-bottom: 150px;
@@ -482,7 +465,7 @@ margin-left:15%;
   width: 60%;
   height: 300px;
   box-shadow: 2px 5px 5px 5px #d3e2e2;
-    
+
 }
 .cardtitle {
   color: #fff;
@@ -498,17 +481,25 @@ margin-left:15%;
 .card-text{
     margin-left:10px;
     margin-right:10px;
-    
+
 }
 .card__actions a{
     margin-left: 10px;
 }
+
+button{
+  width: 100px;
+  height: 50px;
+  background: #d3e2e2;
+}
+
+
 #footer
 { width: 100%;
   font: normal 100% 'Nunito', sans-serif;
   height: 33px;
   padding: 24px 0 5px 0;
-  text-align: center; 
+  text-align: center;
   background: #01474e;
   color: #FFF;
   text-transform: uppercase;

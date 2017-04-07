@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Styles Alive</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Augustine Thorbjornsen" />
+  <meta name="Styles" content="colours, styles, fonts, style guides" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<body role="document">
+  <noscript class = "noscript">Sorry, it looks like Javascript is not enabled in your browser, please enable it to have full experience.</noscript>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <figure class = "fishy" role="img" aria-labelledby="fish-caption">
+            <pre>
+        o         .  .'`/
+         '       /  (
+        O    .-'` ` `'-._     .')
+          __/ (o)        '. .' /
+       <()       )))))    ><  <
+          `\  |_\      _.'  '. \
+            '-._  _ .-'       '.)
+                `\__\
+             </pre>
+             </figure>
+        <div id="logo_text">
+          <h1><a href="index.html">Styles Alive</a></h1>
+          <h2>Styles Are A Journey Of Discovery</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a class="refer" href="index.html">Home</a></li>
+          <li><a class="refer" href="StyleSheet.html">Style Sheet</a></li>
+          <li><a class="refer" href="ColourPalette.html">Colour</a></li>
+          <li><a class="refer" href="Components.html">Components</a></li>
+          <li class="selected" ><a class="refer" href="database.html">DataBase</a></li>
+          <li><a class="refer" href="References.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+      <div id="content_header"></div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3 role="heading">Edge-Cases</h3>
+        <ol role=list>
+        <li>
+          <p>Validating Email Address.</p>
+          <p>....I fixed this problem by using a simple string character set and a function to check if certain characters were present or not....</p>
+        </li>
+        <li><p>Presenting Form Data</p>
+          <p>....This was hard to fix because when it would read from the array and print all the data without any line breaks or separation. However, I fixed this by line breaks and adding in colons and equal signs...</p>
+        </li>
+       </ol>
+      </div>
+        <div id="content">
+          <div class="LocalStorage">
+          <h1 role="heading">Local Storage and Form Validation</h1>
+          <p>Local storage allows any web application to store data within the browser and retrieve it, even if the browser is closed or restarted.</p>
+          <p> Local storage typically allows for 5MB of storage space per domain and is primarily used only at the client side.</p>
+          <p> Local storage also uses a key/value paired system for storing the data.</p>
+          <p> Test this form and see how it works. But first click below to test if local Storage is working in your browser.</p>
+          <input class="rounded" type="button" name="check browser" value="Check Browser" onclick="checkBrowser()"></li>
+          <label id="storageConfirm"></label><br><br/>
+            <form id="myForm" role="form" name="myForm" onsubmit="return formValidation()">
+              <h3>Registration Form</h3><br/>
+            <label for="UserId">User ID:</label>
+          <input id="usernameIn" type="text" role="textbox" name="UserId" value="" class="input" placeholder="User Name"/>
+          <label id="validuser" class="input"></label>
+          <br><br/>
+            <label for="Password">Password:</label>
+          <input id="pwdIn" type="password" role="textbox"name="Password" value="" class="input" placeholder="Password"/>
+          <label id="validpwd" class="input"></label>
+          <br><br/>
+          <label for="Name">Name:</label>
+          <input id="nameIn" type="text"  role="textbox" name="Name" value="" class = "input" placeholder="First Name"/>
+          <label id="validname" class="input"></label>
+          <br><br/>
+          <label for="Address">Address:</label>
+          <input id="addressIn" type="text"  role="textbox" name="Address"value="" class = "input" placeholder="Address"/>
+          <label id="validaddress" class="input"></label>
+          <br><br/>
+          <label for="Country">Country:</label>
+          <select name="Country">
+          <option selected="" value="Default">(Please select a country)</option>
+          <option value="Australia">Australia</option>
+          <option value="Canada">Canada</option>
+          <option value="India">India</option>
+          <option value="Russia">Russia</option>
+          <option value="USA">USA</option>
+          </select>
+          <label id="validcountry" class="input"></label>
+          <br><br/>
+          <label for="Zip">ZIP Code:</label>
+          <input type="text" name="Zip"  role="textbox" id="zipIn" value=""class = "input" placeholder="Zip Code"/>
+          <label id="validzip" class="input"></label>
+          <br><br/>
+          <label for="Email">Email:</label>
+          <input id="emailIn" type="text"  role="textbox" name="Email" value=""class = "input" placeholder="Email"/>
+          <label id="validemail" class="input"></label>
+          <div class='block'>
+          <input id='saveData' name='save Form' type="submit">
+          <input id='getData' type="button" value = 'Get Form' >
+          <input id='clearData' type="button" value = 'Clear StoredData/Form'>
+          <br><br/>
+          <label id='results' for="saved or not?"></label>
+          </div>
+        </form>
+        </div>
+        <section class ="results_table" role=region>
+          <h3 class= "data_Store" role="heading">Stored Data</h3>
+          <p class ="results_final"><p>
+        </section>
+      </div>
+      </div>
+      </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; Styles Alive | Augustine Thorbjornsen | s290428
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jsMain.js" ></script>
+</body>
+</html>
