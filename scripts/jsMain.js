@@ -80,24 +80,9 @@ var address = document.myForm.Address;
 var country = document.myForm.Country;
 var zip = document.myForm.Zip;
 var email = document.myForm.Email;
-
-if(allLetter(name)){
-  document.getElementById("valid_name").innerHTML = ("Completed");
-if(userid_validation(id,5,12)){
-  document.getElementById('valid_User').innerHTML = ("Completed");
-if(password_validation(pwd,7,12)){
-  document.getElementById('valid_pwd').innerHTML = ("Completed");
-if(ValidateEmail(email)){
-    document.getElementById('valid_email').innerHTML = "Completed";
-if(alphanumeric(address)){
-  document.getElementById("valid_address").innerHTML =("Completed");
-if(allnumeric(zip)){
-    document.getElementById('valid_zip').innerHTML = "Completed";
-if(countryselect(country)){
-    document.getElementById("valid_country").innerHTML = ("Completed");
-}}}}}}return true;
-  }return false;
-
+if(allLetter(name) && userid_validation(id,5,12) && password_validation(pwd,7,12) && ValidateEmail(email) && alphanumeric(address) && allnumeric(zip) && countryselect(country)){
+return true;
+}return false;
 }
 
 //userID validation function, min length 5 max length 12
@@ -107,6 +92,8 @@ if (uid_len === 0 || uid_len >= my || uid_len < mx){
 document.getElementById('valid_User').innerHTML = ("Consider between "+mx+" and "+my);
 return false;
 }
+document.getElementById('valid_User').innerHTML = ("Completed");
+
 return true;
 }
 
@@ -117,6 +104,7 @@ if (password_len === 0 ||password_len >= my || password_len < mx){
 document.getElementById('valid_pwd').innerHTML = ("Consider between "+mx+" and "+my);
 return false;
 }
+document.getElementById('valid_pwd').innerHTML = ("Completed");
 return true;
 }
 
@@ -124,6 +112,7 @@ return true;
 function allLetter(name){
 var letters = /^[A-Za-z]+$/;
 if(name.value.match(letters)){
+    document.getElementById("valid_name").innerHTML = ("Completed");
 return true;
 }document.getElementById("valid_name").innerHTML = ('Alphabet characters only');
 return false;
@@ -133,6 +122,7 @@ return false;
 function alphanumeric(address){
 var letters = /[0-9a-zA-Z]/;
 if(address.value.match(letters)){
+    document.getElementById("valid_address").innerHTML =("Completed");
 return true;
 }document.getElementById("valid_address").innerHTML =('Alphanumeric characters only');
 return false;
@@ -145,6 +135,7 @@ if(country.value == "Default"){
 document.getElementById("valid_country").innerHTML = ('Please select');
 return false;
 }
+document.getElementById("valid_country").innerHTML = ("Completed");
 return true;
 }
 
@@ -152,6 +143,7 @@ return true;
 function allnumeric(zip){
 var numbers = /^[0-9]+$/;
 if(zip.value.match(numbers)){
+    document.getElementById('valid_zip').innerHTML = "Completed";
 return true;
 }
 document.getElementById('valid_zip').innerHTML = ('Numeric characters only');
@@ -162,6 +154,7 @@ return false;
 function ValidateEmail(email){
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 if(email.value.match(mailformat)){
+  document.getElementById('valid_email').innerHTML = "Completed";
 return true;
 }document.getElementById('valid_email').innerHTML =("Invalid email address");
 return false;
