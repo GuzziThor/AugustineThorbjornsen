@@ -470,7 +470,7 @@ table tr td {
 
 /*More typography blockquote*/
 
-.container {
+.block_container {
   width: 90%;
   position: relative;
   padding-top: 40px;
@@ -487,13 +487,13 @@ blockquote {
   transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
-.container:before {
+.block_container:before {
   font-size: 208px;
   position: absolute;
   left: -100px;
   color: #666;
 }
-.container:after {
+.block_container:after {
   font-size: 208px;
   position: absolute;
   right: -100px;
@@ -575,6 +575,23 @@ img {
 }
 .card__actions a {
   margin-left: 10px;
+}
+.types {
+  display: inline-block;
+  padding: 20px 0px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+.container {
+  padding-top: 20px;
+  height: 180px;
+  width: 400px;
+}
+.container>div {
+  float: left;
+}
+.control {
+  margin-right: 70px;
 }
 #footer {
   width: 100%;
