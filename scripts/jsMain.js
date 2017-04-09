@@ -9,27 +9,6 @@ function checkBrowser() {
 document.getElementById('storageConfirm').textContent = " Sorry, local storage is not working in your browser...";
     }
 }
-
-//roundslider events
-$("#type").roundSlider({
-    value: 35,
-});
-// initial values set to 35 and 60
-$("#shape").roundSlider({
-    value: 60,
-    sliderType: "min-range"
-});
-function sliderTypeChanged(e) {
-$("#type").roundSlider({ sliderType: e.value });
-}
-function sliderShapeChanged(e) {
-var options = { circleShape: e.value };
-if (e.value == "pie") options["startAngle"] = 0;
-else if (e.value == "custom-quarter" || e.value == "custom-half") options["startAngle"] = 45;
-$("#shape").roundSlider(options);
-}
-
-
  // check for submit button and submit form on enter press, wrap curser to next input on enter key
  //i got this code from http://stackoverflow.com/questions/22853696/move-cursor-to-next-text-field-pressing-enter
 $(function detectKeydown(){
@@ -101,31 +80,30 @@ var address = document.myForm.Address;
 var country = document.myForm.Country;
 var zip = document.myForm.Zip;
 var email = document.myForm.Email;
-if(userid_validation(id,5,12)){
-  document.getElementById('validuser').innerHTML = ("Completed");
-if(password_validation(pwd,7,12)){
-  document.getElementById('validpwd').innerHTML = ("Completed");
 if(allLetter(name)){
-  document.getElementById("validname").innerHTML = ("Completed");
-if(alphanumeric(address)){
-  document.getElementById("validaddress").innerHTML =("Completed");
-if(countryselect(country)){
-    document.getElementById("validcountry").innerHTML = ("Completed");
-if(allnumeric(zip)){
-  document.getElementById('validzip').innerHTML = "Completed";
+  document.getElementById("valid_name").innerHTML = ("Completed");
+if(userid_validation(id,5,12)){
+  document.getElementById('valid_User').innerHTML = ("Completed");}
+if(password_validation(pwd,7,12)){
+  document.getElementById('valid_pwd').innerHTML = ("Completed");}
 if(ValidateEmail(email)){
-  document.getElementById('validemail').innerHTML = "Completed";
-return true;
-}}}}}}
-}return false;
+    document.getElementById('valid_email').innerHTML = "Completed";}
+if(alphanumeric(address)){
+  document.getElementById("valid_address").innerHTML =("Completed");}
+if(allnumeric(zip)){
+    document.getElementById('valid_zip').innerHTML = "Completed";}
+if(countryselect(country)){
+    document.getElementById("valid_country").innerHTML = ("Completed");
 
+}return true;
+}return false;
 }
 
 //userID validation function, min length 5 max length 12
 function userid_validation(id,mx,my){
 var uid_len = id.value.length;
 if (uid_len === 0 || uid_len >= my || uid_len < mx){
-document.getElementById('validuser').innerHTML = ("Consider between "+mx+" and "+my);
+document.getElementById('valid_User').innerHTML = ("Consider between "+mx+" and "+my);
 return false;
 }
 return true;
@@ -135,7 +113,7 @@ return true;
 function password_validation(pwd,mx,my){
 var password_len = pwd.value.length;
 if (password_len === 0 ||password_len >= my || password_len < mx){
-document.getElementById('validpwd').innerHTML = ("Consider between "+mx+" and "+my);
+document.getElementById('valid_pwd').innerHTML = ("Consider between "+mx+" and "+my);
 return false;
 }
 return true;
@@ -146,7 +124,7 @@ function allLetter(name){
 var letters = /^[A-Za-z]+$/;
 if(name.value.match(letters)){
 return true;
-}document.getElementById("validname").innerHTML = ('Alphabet characters only');
+}document.getElementById("valid_name").innerHTML = ('Alphabet characters only');
 return false;
 }
 
@@ -155,7 +133,7 @@ function alphanumeric(address){
 var letters = /[0-9a-zA-Z]/;
 if(address.value.match(letters)){
 return true;
-}document.getElementById("validaddress").innerHTML =('Alphanumeric characters only');
+}document.getElementById("valid_address").innerHTML =('Alphanumeric characters only');
 return false;
 }
 
@@ -163,7 +141,7 @@ return false;
 //country select must not be default
 function countryselect(country){
 if(country.value == "Default"){
-document.getElementById("validcountry").innerHTML = ('Please select');
+document.getElementById("valid_country").innerHTML = ('Please select');
 return false;
 }
 return true;
@@ -175,7 +153,7 @@ var numbers = /^[0-9]+$/;
 if(zip.value.match(numbers)){
 return true;
 }
-document.getElementById('validzip').innerHTML = ('Numeric characters only');
+document.getElementById('valid_zip').innerHTML = ('Numeric characters only');
 return false;
 }
 
@@ -184,6 +162,6 @@ function ValidateEmail(email){
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 if(email.value.match(mailformat)){
 return true;
-}document.getElementById('validemail').innerHTML =("Invalid email address");
+}document.getElementById('valid_email').innerHTML =("Invalid email address");
 return false;
 }

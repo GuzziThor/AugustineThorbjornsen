@@ -67,21 +67,29 @@
           <label id="storageConfirm"></label><br><br/>
             <form id="myForm" role="form" name="myForm" onsubmit="return formValidation()">
               <h3>Registration Form</h3><br/>
+              <label for="Name">Name:</label>
+              <input id="nameIn" type="text"  role="textbox" name="Name" value="" class = "input" placeholder="First Name"/>
+              <label id="valid_name" class="input"></label>
+              <br><br/>
             <label for="UserId">User ID:</label>
-          <input id="usernameIn" type="text" role="textbox" name="UserId" value="" class="input" placeholder="User Name"/>
-          <label id="validuser" class="input"></label>
+          <input id="user_Name_In" type="text" role="textbox" name="UserId" value="" class="input" placeholder="User Name"/>
+          <label id="valid_User" class="input"></label>
           <br><br/>
             <label for="Password">Password:</label>
-          <input id="pwdIn" type="password" role="textbox"name="Password" value="" class="input" placeholder="Password"/>
-          <label id="validpwd" class="input"></label>
+          <input id="pwd_In" type="password" role="textbox"name="Password" value="" class="input" placeholder="Password"/>
+          <label id="valid_pwd" class="input"></label>
           <br><br/>
-          <label for="Name">Name:</label>
-          <input id="nameIn" type="text"  role="textbox" name="Name" value="" class = "input" placeholder="First Name"/>
-          <label id="validname" class="input"></label>
+          <label for="Email">Email:</label>
+          <input id="emailIn" type="text"  role="textbox" name="Email" value=""class = "input" placeholder="Email"/>
+          <label id="valid_email" class="input"></label>
           <br><br/>
           <label for="Address">Address:</label>
           <input id="addressIn" type="text"  role="textbox" name="Address"value="" class = "input" placeholder="Address"/>
-          <label id="validaddress" class="input"></label>
+          <label id="valid_address" class="input"></label>
+          <br><br/>
+          <label for="Zip">ZIP Code:</label>
+          <input type="text" name="Zip"  role="textbox" id="zipIn" value=""class = "input" placeholder="Zip Code"/>
+          <label id="valid_zip" class="input"></label>
           <br><br/>
           <label for="Country">Country:</label>
           <select name="Country">
@@ -92,15 +100,7 @@
           <option value="Russia">Russia</option>
           <option value="USA">USA</option>
           </select>
-          <label id="validcountry" class="input"></label>
-          <br><br/>
-          <label for="Zip">ZIP Code:</label>
-          <input type="text" name="Zip"  role="textbox" id="zipIn" value=""class = "input" placeholder="Zip Code"/>
-          <label id="validzip" class="input"></label>
-          <br><br/>
-          <label for="Email">Email:</label>
-          <input id="emailIn" type="text"  role="textbox" name="Email" value=""class = "input" placeholder="Email"/>
-          <label id="validemail" class="input"></label>
+          <label id="valid_country" class="input"></label>
           <div class='block'>
           <input id='saveData' name='save Form' type="submit">
           <input id='getData' type="button" value = 'Get Form' >

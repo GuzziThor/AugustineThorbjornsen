@@ -330,46 +330,6 @@ p.color6 {
 
 /*Components page form and tables*/
 
-.form_settings {
-  margin: 5px 0 0 0;
-}
-.form_settings p {
-  padding: 10 0 5px 0;
-}
-.form_settings input,
-.form_settings textarea {
-  padding: 5px;
-  width: 299px;
-  font: 100% arial;
-  border: 1px solid #000;
-  background: #D3E2E2;
-  color: #47433F;
-}
-.form_settings .submit {
-  font: 100% arial;
-  border: 1px solid;
-  width: 99px;
-  height: 33px;
-  padding: 2px 0 3px 0;
-  cursor: pointer;
-  background: #01474e;
-  color: #FFF;
-}
-.form_settings textarea {
-  font: 100% arial;
-  width: 90%;
-  height: 100px;
-}
-.form_settings select {
-  width: 90%;
-}
-.form_settings .checkbox {
-  margin: 4px 0;
-  padding: 0;
-  width: 14px;
-  border: 0;
-  background: none;
-}
 .separator {
   width: 100%;
   height: 0;
