@@ -80,23 +80,24 @@ var address = document.myForm.Address;
 var country = document.myForm.Country;
 var zip = document.myForm.Zip;
 var email = document.myForm.Email;
+
 if(allLetter(name)){
   document.getElementById("valid_name").innerHTML = ("Completed");
 if(userid_validation(id,5,12)){
-  document.getElementById('valid_User').innerHTML = ("Completed");}
+  document.getElementById('valid_User').innerHTML = ("Completed");
 if(password_validation(pwd,7,12)){
-  document.getElementById('valid_pwd').innerHTML = ("Completed");}
+  document.getElementById('valid_pwd').innerHTML = ("Completed");
 if(ValidateEmail(email)){
-    document.getElementById('valid_email').innerHTML = "Completed";}
+    document.getElementById('valid_email').innerHTML = "Completed";
 if(alphanumeric(address)){
-  document.getElementById("valid_address").innerHTML =("Completed");}
+  document.getElementById("valid_address").innerHTML =("Completed");
 if(allnumeric(zip)){
-    document.getElementById('valid_zip').innerHTML = "Completed";}
+    document.getElementById('valid_zip').innerHTML = "Completed";
 if(countryselect(country)){
     document.getElementById("valid_country").innerHTML = ("Completed");
+}}}}}}return true;
+  }return false;
 
-}return true;
-}return false;
 }
 
 //userID validation function, min length 5 max length 12
