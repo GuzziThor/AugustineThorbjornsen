@@ -12,7 +12,6 @@
     <link href="css/roundslider.min.css" rel="stylesheet" />
 </head>
   <body role="document">
-    <noscript class = "noscript">Sorry, it looks like Javascript is not enabled in your browser, please enable it to have full experience.</noscript>
     <div id="main">
       <div id="header">
         <div id="logo">
@@ -47,11 +46,15 @@
       <div id="content_header"></div>
       <div id="site_content">
           <div id="content">
+            <noscript class = "noscript">Sorry, it looks like Javascript is not enabled in your browser, please enable it to have full experience.</noscript>
             <h1>Components</h1>
+
             <ol>
             <li>
-           <div class="types">
-        <h2>Slider Types</h2>
+        <h2>Sliders</h2>
+        <p> These sliders use a jquery plugin that I found from<a href="http://www.jqueryrain.com/2014/10/circular-slider-jquery-plugin/">Jquery Rain.</a></p>
+    <div class="types">
+        <h3>Types</h3>
         <div class="container">
             <div class="control">
                 <div id="type"></div>
@@ -66,7 +69,7 @@
         </div>
     </div>
     <div class="types">
-        <h2>Circle Shapes</h2>
+        <h3>Shapes</h3>
         <div class="container">
             <div class="control">
                 <div id="shape"></div>
@@ -92,8 +95,8 @@
 <li>
     <h2>Tables</h2>
   </li>
-  <p>Tables should only be used to display data and never to outlay a website. Below is just a random table I made for an example.</p>
-  <br/>
+  <p>Tables should only be used to display data and never to outlay a website.</p>
+    <p>* I used Jquery to detect when the mouse hovered over each 'td' and made the text color change to red.</p>
   <table class="table1">
   <caption><h4>Specifications comparison between Iphone 8 vs Galaxy s8</h4></caption>
     <tr><th></th><th>Iphone 8</th><th>Galaxy s8</th></tr>
@@ -106,17 +109,22 @@
     <h2>Summary Card</h2>
    </li>
       <p>Below is an example of a summary card:</p>
+      <p>* I used Jquery to flip and move the dog from left to right. To test hover the mouse over left or right.</p>
       <div class="Card">
       <div class="cardtitle">
-      <h3 class="cardtitle-text">CSS is FUN</h3>
+      <h3>CSS is FUN</h3>
       </div>
+      <div class="doggy"></div>
       <div class="card-text">
       <p>HTML and CSS are a lot of fun when you understand it.</p>
-      </div>
-       <div class="card__actions">
-       <a class="button">
-        Read more on WebDesign
-       </a>
+      <a class="button">
+       Read more on WebDesign
+      </a>
+      <section>
+      <div class="games-scroll-left">Left</div>
+      <div class="games-scroll-right">Right</div>
+
+    </section>
   </div>
  </div>
   <br/>

@@ -1,11 +1,13 @@
 //Augustine Thorbjornsen s290428
+
 //roundslider events
 $("#type").roundSlider({
     value: 35,
+    sliderType: "range"
 });
-// initial values set to 35 and 60
+// initial values set to 35 and 80
 $("#shape").roundSlider({
-    value: 60,
+    value: 80,
     sliderType: "min-range"
 });
 function sliderTypeChanged(e) {

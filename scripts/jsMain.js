@@ -71,6 +71,55 @@ $("#clearData")
    });
  });
  });
+
+//hover over table elements, changes the color to red
+ $('td').hover(function() {
+     $(this).css('color', 'red');
+ }, function() {
+     $(this).css('color', '');
+ });
+
+
+
+
+ $(function mouseDetects() {
+   $('.games-scroll-left').on('mouseenter', function() {
+     animateLeft = true;
+     left();
+     $('.doggy').removeClass('img');
+
+   }).on('mouseleave', function(){
+     animateLeft = false;
+     $(".doggy").stop();
+   });
+   $('.games-scroll-right').on('mouseenter', function() {
+     animateRight = true;
+     right();
+     $('.doggy').addClass('img');
+   }).on('mouseleave', function(){
+     animateRight = false;
+     $(".doggy").stop();
+   });
+ });
+//moves the dog left
+ function left() {
+   if (!animateLeft) {
+     $(".doggy").stop();
+     return;
+   }
+   $(".doggy").animate({left: '-=10'}, 'fast', left);
+ }
+
+ //moves the dog right
+ function right() {
+   if (!animateRight) {
+     $(".doggy").stop();
+     return;
+   }
+   $(".doggy").animate({left: '+=10'}, 'fast', right);
+ }
+
+
 //validate the form, calls all validation objects and if element is true it returns "Completed".
 function formValidation(){
 var id = document.myForm.UserId;
