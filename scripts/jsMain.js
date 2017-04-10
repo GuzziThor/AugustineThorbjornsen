@@ -108,6 +108,7 @@ $("#clearData")
      return;
    }
    $(".doggy").animate({left: '-=10'}, 'fast', left);
+
  }
 
  //moves the dog right
@@ -119,6 +120,30 @@ $("#clearData")
    $(".doggy").animate({left: '+=10'}, 'fast', right);
  }
 
+
+     $("#show").click(function show() {
+        $(".block_container").show( 1000 );
+             });
+
+     $("#hide").click(function hide() {
+        $(".block_container").hide( 1000 );
+             });
+
+
+
+$('#randomColor').click(function makeRandomColor(){
+
+
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++ ) {
+      color += letters[Math.floor(Math.random() * 16)];
+
+  }
+$('.typo1').css("color", color);
+$('.typo2').css("color", color);
+$('.typo3').css("color", color);
+});
 
 //validate the form, calls all validation objects and if element is true it returns "Completed".
 function formValidation(){
